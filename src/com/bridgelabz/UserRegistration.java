@@ -48,5 +48,13 @@ public class UserRegistration {
             System.out.println("Valid Password-1");
         else
             System.out.println("Invalid Password-1");
+/*
+ UC6: Pre-Defined Password Rule2-> Should have at least 1 Uppercase
+*/
+        boolean result6 = Pattern.matches("^[A-Za-z]{8}$","PassWord");
+        if (result6)
+            System.out.println("Valid Password-2");
+        else
+            System.out.println("Invalid Password-2");
     }
 }
