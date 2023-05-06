@@ -13,7 +13,7 @@ public class UserRegistration {
 //        Matcher matcher = pattern.matcher("Drisya");  //For Reference
 
         boolean result1 = Pattern.matches("^[A-Z][a-z]{2,}","Drisya");
-        if (result1 == true)
+        if (result1)
             System.out.println("Valid First Name");
         else
             System.out.println("Invalid First Name");
