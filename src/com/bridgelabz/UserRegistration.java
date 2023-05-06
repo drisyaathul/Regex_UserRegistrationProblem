@@ -41,7 +41,7 @@ public class UserRegistration {
         else
             System.out.println("Invalid Mobile Format");
 /*
- UC5: Pre-Defined Password Rule-1
+ UC5: Pre-Defined Password Rule1-> Minimum 8 characters
 */
         boolean result5 = Pattern.matches("^[a-z]{8}$","password");
         if (result5)
