@@ -26,12 +26,19 @@ public class UserRegistration {
 /*
  UC3: User need to enter Valid Lastname
       Eg:-abc.xyz@bl.co.in (Given in UC2) should match the Pattern
-
 */
-        boolean result3 = Pattern.matches("[a-z]{3,}[.][a-z0-9]*@[a-z]{2,}[.][a-z]{2,}[.]*[a-z]*","drisya.athul23@gmail.com");
+        boolean result3 = Pattern.matches("[a-z]{3,}[.][a-z0-9]*@[a-z]{2,}[.][a-z]{2,}[.]*[a-z]+","drisya.athul23@gmail.com");
         if (result3)
             System.out.println("Valid Email Address");
         else
             System.out.println("Invalid Email Address");
+/*
+ UC4: Pre-Defined Mobile Format
+*/
+        boolean result4 = Pattern.matches("^[+][0-9]{2}\\s[6-9][0-9]{9}","+91 9919819801");
+        if (result4)
+            System.out.println("Valid Mobile Format");
+        else
+            System.out.println("Invalid Mobile Format");
     }
 }
