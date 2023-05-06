@@ -23,5 +23,15 @@ public class UserRegistration {
             System.out.println("Valid Last Name");
         else
             System.out.println("Invalid Last Name");
+/*
+ UC2: User need to enter Valid Lastname
+      Eg:-abc.xyz@bl.co.in (Given in UC2) should match the Pattern
+
+*/
+        boolean result3 = Pattern.matches("[a-z]{3,}[.][a-z0-9]*@[a-z]{2,}[.][a-z]{2,}[.]*[a-z]*","drisya.athul23@gmail.com");
+        if (result3)
+            System.out.println("Valid Email Address");
+        else
+            System.out.println("Invalid Email Address");
     }
 }
