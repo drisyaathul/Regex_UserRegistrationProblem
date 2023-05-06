@@ -43,7 +43,7 @@ public class UserRegistration {
 /*
  UC5: Pre-Defined Password Rule1-> Minimum 8 characters
 */
-        boolean result5 = Pattern.matches("^[a-z]{8}$","password");
+        boolean result5 = Pattern.matches("^[a-z]{8,}$","password");
         if (result5)
             System.out.println("Valid Password-1");
         else
