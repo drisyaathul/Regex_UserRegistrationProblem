@@ -43,7 +43,7 @@ public class UserRegistration {
 /*
  UC5: Pre-Defined Password Rule1-> Minimum 8 characters
 */
-        boolean result5 = Pattern.matches("^[a-z]{8}$","password");
+        boolean result5 = Pattern.matches("^[a-z]{8,}$","password");
         if (result5)
             System.out.println("Valid Password-1");
         else
@@ -51,10 +51,18 @@ public class UserRegistration {
 /*
  UC6: Pre-Defined Password Rule2-> Should have at least 1 Uppercase
 */
-        boolean result6 = Pattern.matches("^[A-Za-z]{8}$","PassWord");
+        boolean result6 = Pattern.matches("^[A-Za-z]{8,}$","PassWord");
         if (result6)
             System.out.println("Valid Password-2");
         else
             System.out.println("Invalid Password-2");
+/*
+ UC7: Pre-Defined Password Rule3-> Should have at least 1 Numeric Number
+*/
+        boolean result7 = Pattern.matches("^[A-Za-z0-9]{8,}$","PassWord123");
+        if (result7)
+            System.out.println("Valid Password-3");
+        else
+            System.out.println("Invalid Password-3");
     }
 }
