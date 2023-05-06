@@ -40,5 +40,13 @@ public class UserRegistration {
             System.out.println("Valid Mobile Format");
         else
             System.out.println("Invalid Mobile Format");
+/*
+ UC5: Pre-Defined Password Rule-1
+*/
+        boolean result5 = Pattern.matches("^[a-z]{8}$","password");
+        if (result5)
+            System.out.println("Valid Password-1");
+        else
+            System.out.println("Invalid Password-1");
     }
 }
