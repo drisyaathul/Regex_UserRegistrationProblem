@@ -64,5 +64,13 @@ public class UserRegistration {
             System.out.println("Valid Password-3");
         else
             System.out.println("Invalid Password-3");
+/*
+ UC8: Pre-Defined Password Rule4-> Has exactly one special character
+*/
+        boolean result8 = Pattern.matches("^[A-Za-z0-9].{8,}$","Pass_Word@123");
+        if (result8)
+            System.out.println("Valid Password-4");
+        else
+            System.out.println("Invalid Password-4");
     }
 }
