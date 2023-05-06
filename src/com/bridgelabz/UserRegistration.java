@@ -24,7 +24,7 @@ public class UserRegistration {
         else
             System.out.println("Invalid Last Name");
 /*
- UC2: User need to enter Valid Lastname
+ UC3: User need to enter Valid Lastname
       Eg:-abc.xyz@bl.co.in (Given in UC2) should match the Pattern
 
 */
